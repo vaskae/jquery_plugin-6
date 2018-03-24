@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: 'Avenir Next','Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+p {
+  padding-left:2rem;
+  padding-right:2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+.item {
+  
+
+  padding:10px 0 10px 0;
+  height:200px;
+}
+
+.col {
+  display: inline-block;
+}
+
+
+.bg-pink {
+  background-color: #E91E63;
+}
+
+.bg-cyan {
+  background-color: #00BCD4;
+}
