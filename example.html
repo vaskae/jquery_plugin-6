@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link href="libs/infragistics.theme.css" rel="stylesheet" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jsDatePick Javascript example</title>
+ 
+
+	
+<script type="text/javascript" src="libs/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="libs/jquery-ui.min.js"></script>
+	
+
+
+	<script type="text/javascript">
+	$(function() {
+    $("#datepicker1").datepicker({
+	     minDate: 0, // 0 days offset = today
+        minDate: 'today',
+        changeYear: true,
+        
+         buttonImage: 'images/iconcalendar.gif',
+        buttonImageOnly: true,
+        showOn: 'button',
+         onSelect: function(dateText, inst) {
+            $('#year1').val(dateText.split('/')[2]);
+            $('#month1').val(dateText.split('/')[0]);
+            $('#day1').val(dateText.split('/')[1]);                     
+        }
+    });
+});
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+	
+    
+  <div class="calender" align="center">
+    <h2>JsDatePick's Javascript Calendar </h2>
+    <p>Date:</p>
+    <input id="month1" type="text" size="2" />
+    <input id="day1" type="text" size="2" />
+    <input id="year1" type="text" size="4"/>
+    <input type="hidden" id="datepicker1" />   
+	
+	
+	</div>
+
+	
+
+</body>
+</html>
